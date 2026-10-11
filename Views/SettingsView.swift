@@ -13,6 +13,7 @@ public struct SettingsView: View {
     @State private var showBulkDeleteConfirm: Bool = false
     @State private var bulkDeleteResult: String? = nil
     @State private var showPaywallSheet: Bool = false
+    @State private var showAudioPicker: Bool = false
     @State private var restoreMessage: String? = nil
     @State private var showRestoreAlert: Bool = false
     
@@ -351,23 +352,167 @@ public struct SettingsView: View {
                         .tint(.purple)
                     }
                     
-                    // アラーム音テスト
+                    // 激モード総合テスト
                     HStack {
-                        Label("サイレンアラーム音テスト", systemImage: "bell.badge.fill")
+                        Label("激モード発火テスト（音＋光＋振動）", systemImage: "bolt.fill")
                             .foregroundColor(.red)
                         
                         Spacer()
                         
-                        Button(soundManager.isAlarmPlaying ? "停止" : "再生") {
+                        Button(soundManager.isAlarmPlaying ? "停止" : "発火テスト") {
                             if soundManager.isAlarmPlaying {
                                 soundManager.stopAlarm()
+                                flashManager.stopStrobeFlash()
                             } else {
                                 soundManager.startIntenseAlarm()
+                                flashManager.startStrobeFlash()
                             }
                         }
                         .buttonStyle(.bordered)
                         .tint(.red)
                     }
+                }
+                
+                // MARK: - 2.5 アラーム音・サイレンの選択（3種類 ＋ プレミアム音楽）
+                Section(header: Text("アラーム音の種類（3種類から選択）").font(.system(size: 14, weight: .bold)),
+                        footer: Text("激モード設定時やアラーム発火時に鳴り響く音を選択できます。プレミアムならお気に入りの音楽やボイスも設定可能です。").font(.system(size: 11))) {
+                    
+                    // ① 激サイレン
+                    // ② 電子アラーム
+                    // ③ 警告ベル
+                    ForEach([AlarmSoundType.intenseSiren, AlarmSoundType.digitalBeep, AlarmSoundType.warningBell]) { soundType in
+                        HStack {
+                            Button(action: {
+                                soundManager.selectedSoundType = soundType
+                            }) {
+                                HStack(spacing: 12) {
+                                    Image(systemName: soundManager.selectedSoundType == soundType ? "checkmark.circle.fill" : "circle")
+                                        .foregroundColor(soundManager.selectedSoundType == soundType ? .blue : .secondary.opacity(0.4))
+                                        .font(.system(size: 20))
+                                    
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        HStack(spacing: 6) {
+                                            Image(systemName: soundType.iconName)
+                                                .foregroundColor(.blue)
+                                                .font(.system(size: 13))
+                                            Text(soundType.displayName)
+                                                .font(.system(size: 15, weight: .bold))
+                                                .foregroundColor(.primary)
+                                        }
+                                        Text(soundType.description)
+                                            .font(.system(size: 11))
+                                            .foregroundColor(.secondary)
+                                    }
+                                }
+                            }
+                            .buttonStyle(.plain)
+                            
+                            Spacer()
+                            
+                            // 試聴ボタン
+                            Button(soundManager.previewingSoundType == soundType ? "停止" : "試聴") {
+                                soundManager.previewSound(type: soundType)
+                            }
+                            .buttonStyle(.bordered)
+                            .tint(soundManager.previewingSoundType == soundType ? .red : .blue)
+                            .font(.system(size: 12, weight: .bold))
+                        }
+                        .padding(.vertical, 4)
+                    }
+                    
+                    // ④ プレミアム限定：お気に入りの音楽
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack {
+                            Button(action: {
+                                if subManager.isPro {
+                                    soundManager.selectedSoundType = .customMusic
+                                } else {
+                                    showPaywallSheet = true
+                                }
+                            }) {
+                                HStack(spacing: 12) {
+                                    Image(systemName: soundManager.selectedSoundType == .customMusic ? "checkmark.circle.fill" : "circle")
+                                        .foregroundColor(soundManager.selectedSoundType == .customMusic ? .orange : .secondary.opacity(0.4))
+                                        .font(.system(size: 20))
+                                    
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        HStack(spacing: 6) {
+                                            Image(systemName: "music.note.list")
+                                                .foregroundColor(.orange)
+                                                .font(.system(size: 13))
+                                            Text("お気に入りの音楽")
+                                                .font(.system(size: 15, weight: .bold))
+                                                .foregroundColor(.primary)
+                                            Label("プレミアム", systemImage: "crown.fill")
+                                                .font(.system(size: 10, weight: .bold))
+                                                .padding(.horizontal, 6)
+                                                .padding(.vertical, 2)
+                                                .background(Color.orange.opacity(0.15))
+                                                .foregroundColor(.orange)
+                                                .clipShape(Capsule())
+                                        }
+                                        
+                                        if let title = soundManager.customMusicTitle, !title.isEmpty {
+                                            Text("設定中: \(title)")
+                                                .font(.system(size: 12, weight: .semibold))
+                                                .foregroundColor(.orange)
+                                        } else {
+                                            Text("好きな曲や音声ファイルを指定できます")
+                                                .font(.system(size: 11))
+                                                .foregroundColor(.secondary)
+                                        }
+                                    }
+                                }
+                            }
+                            .buttonStyle(.plain)
+                            
+                            Spacer()
+                            
+                            if subManager.isPro {
+                                if soundManager.hasCustomMusic {
+                                    Button(soundManager.previewingSoundType == .customMusic ? "停止" : "試聴") {
+                                        soundManager.previewSound(type: .customMusic)
+                                    }
+                                    .buttonStyle(.bordered)
+                                    .tint(soundManager.previewingSoundType == .customMusic ? .red : .orange)
+                                    .font(.system(size: 12, weight: .bold))
+                                }
+                            } else {
+                                Button("詳細") {
+                                    showPaywallSheet = true
+                                }
+                                .buttonStyle(.bordered)
+                                .tint(.orange)
+                                .font(.system(size: 12, weight: .bold))
+                            }
+                        }
+                        
+                        if subManager.isPro {
+                            HStack(spacing: 10) {
+                                Button(action: {
+                                    showAudioPicker = true
+                                }) {
+                                    Label(soundManager.hasCustomMusic ? "別の音楽を選択" : "音楽・音声ファイルを選択", systemImage: "folder.badge.plus")
+                                        .font(.system(size: 12, weight: .medium))
+                                }
+                                .buttonStyle(.borderedProminent)
+                                .tint(.orange)
+                                
+                                if soundManager.hasCustomMusic {
+                                    Button(role: .destructive, action: {
+                                        soundManager.removeCustomMusic()
+                                    }) {
+                                        Text("リセット")
+                                            .font(.system(size: 12))
+                                    }
+                                    .buttonStyle(.bordered)
+                                }
+                            }
+                            .padding(.leading, 32)
+                            .padding(.top, 2)
+                        }
+                    }
+                    .padding(.vertical, 4)
                 }
                 
                 // 3. ウィジェットの案内
@@ -415,6 +560,17 @@ public struct SettingsView: View {
             .navigationTitle("設定とテスト")
             .sheet(isPresented: $showPaywallSheet) {
                 PaywallView()
+            }
+            .sheet(isPresented: $showAudioPicker) {
+                #if canImport(UIKit)
+                AudioFilePicker { url, name in
+                    _ = soundManager.saveCustomMusic(from: url, displayName: name)
+                }
+                #endif
+            }
+            .onDisappear {
+                soundManager.stopPreview()
+                soundManager.stopAlarm()
             }
             .alert("購入の復元", isPresented: $showRestoreAlert) {
                 Button("OK", role: .cancel) {}

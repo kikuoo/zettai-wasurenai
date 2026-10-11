@@ -29,6 +29,7 @@
 		5A6B939983E78E26A69A12A2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65367C89AC062AF5CAA43BC6 /* SubscriptionManager.swift */; };
 		5C10F6B8FF50A119455ACB89 /* alarm_siren.caf in Resources */ = {isa = PBXBuildFile; fileRef = B8DD456249044B68689E4D9E /* alarm_siren.caf */; };
 		65D5A784182DD6642BE0CE4D /* RepeatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BE36B01CB5BB7B9FEBC64 /* RepeatOption.swift */; };
+		71FD43508C10BF03C72D8CD9 /* AudioFilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3EB28621D6BC645D3D292 /* AudioFilePicker.swift */; };
 		87AAF842B7D3BBEB98295775 /* ZettaiWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8FA22557150E864196FEC5FD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93A7ACF8287BE1001E5C1E /* SettingsView.swift */; };
 		94B2E51E5C5B97372683FDC5 /* VoiceSoundGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D55F406526A3ACC62A494D /* VoiceSoundGenerator.swift */; };
@@ -43,6 +44,7 @@
 		DC54A43ADA425EF602381492 /* LongPressButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B4CF6D8B682EEB4569C926 /* LongPressButtonView.swift */; };
 		DFE2DEAAEC9E7A4FA59BAA08 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4026D8D92C5189D24999899 /* LocationPickerView.swift */; };
 		E4FAA02D13B1651059B1197A /* IntenseAlarmOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B5FF7ED5A1EFC8B20D459 /* IntenseAlarmOverlayView.swift */; };
+		E673C01028098A959D8446B3 /* AlarmSoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AB5C417FDB118E503B4CF0 /* AlarmSoundType.swift */; };
 		E7B8E63B5CB8A220C018FC95 /* LocationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437CFEF803123628D0DFE7B /* LocationTarget.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00AB5C417FDB118E503B4CF0 /* AlarmSoundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSoundType.swift; sourceTree = "<group>"; };
 		01F38C9F53B741202EE2401A /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
 		0460BE1DD5B035C2D9DC0693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B2464344D1C218A31FEF22 /* ZettaiWasurenaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettaiWasurenaiApp.swift; sourceTree = "<group>"; };
@@ -82,7 +85,7 @@
 		2F0CFC23BD169927E123B95D /* ZettaiWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZettaiWidget.entitlements; sourceTree = "<group>"; };
 		33B4CF6D8B682EEB4569C926 /* LongPressButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButtonView.swift; sourceTree = "<group>"; };
 		5189896747C663A28C00BB2A /* ZettaiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettaiWidget.swift; sourceTree = "<group>"; };
-		5F2E06C7CEFC183510F1D98B /* ZettaiWasurenai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZettaiWasurenai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2E06C7CEFC183510F1D98B /* ZettaiWasurenai.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ZettaiWasurenai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65367C89AC062AF5CAA43BC6 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
 		69456B314CD3F4AD7E473C8F /* ZettaiWasurenai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZettaiWasurenai.entitlements; sourceTree = "<group>"; };
 		6BB9FAEC6663A98771F9FA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -96,16 +99,17 @@
 		8A2DFBBD0ED1A664E8204924 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
 		9591BAA5737B4C522E68DD24 /* CustomPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreset.swift; sourceTree = "<group>"; };
 		A4026D8D92C5189D24999899 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		A7E3EB28621D6BC645D3D292 /* AudioFilePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilePicker.swift; sourceTree = "<group>"; };
 		AE8E6CC99EAA0D1AF0E86222 /* AddCustomPresetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomPresetSheet.swift; sourceTree = "<group>"; };
-		B0D436CC290EA3135BC26EFF /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		B0D436CC290EA3135BC26EFF /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
 		B348B56BC7D40BA4064FAED4 /* QuickAddReminderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddReminderSheet.swift; sourceTree = "<group>"; };
 		B3EE1EA4F752369B07667278 /* MainReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReminderListView.swift; sourceTree = "<group>"; };
-		B8DD456249044B68689E4D9E /* alarm_siren.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm_siren.caf; sourceTree = "<group>"; };
+		B8DD456249044B68689E4D9E /* alarm_siren.caf */ = {isa = PBXFileReference; path = alarm_siren.caf; sourceTree = "<group>"; };
 		D23CAFF59C9B5F03EA026D0C /* FlashlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashlightManager.swift; sourceTree = "<group>"; };
 		D3D7CA2420766FC483BE1FE1 /* ReminderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardView.swift; sourceTree = "<group>"; };
 		D5D56F98814C65D952A85312 /* SystemAlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAlarmManager.swift; sourceTree = "<group>"; };
 		DA570650C7379C35694C2E42 /* ZettaiWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettaiWidgetBundle.swift; sourceTree = "<group>"; };
-		E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZettaiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ZettaiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3039D06BF34924808B027D9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F435870503D3E2BD8CD18FC5 /* SoundEffectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectManager.swift; sourceTree = "<group>"; };
 		F66B5FF7ED5A1EFC8B20D459 /* IntenseAlarmOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntenseAlarmOverlayView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AE8E6CC99EAA0D1AF0E86222 /* AddCustomPresetSheet.swift */,
+				A7E3EB28621D6BC645D3D292 /* AudioFilePicker.swift */,
 				A4026D8D92C5189D24999899 /* LocationPickerView.swift */,
 				33B4CF6D8B682EEB4569C926 /* LongPressButtonView.swift */,
 				D3D7CA2420766FC483BE1FE1 /* ReminderCardView.swift */,
@@ -178,6 +183,7 @@
 		61E38734DCA52FA0D3ECCF4F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				00AB5C417FDB118E503B4CF0 /* AlarmSoundType.swift */,
 				9591BAA5737B4C522E68DD24 /* CustomPreset.swift */,
 				2437CFEF803123628D0DFE7B /* LocationTarget.swift */,
 				78D07525361DB76F44E41D0D /* ReminderCategory.swift */,
@@ -262,9 +268,11 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					016283365C0FF4F01C6878EC = {
+						DevelopmentTeam = PTD45769J5;
 						ProvisioningStyle = Automatic;
 					};
 					95B810C73D96CE63ECAF08F2 = {
+						DevelopmentTeam = PTD45769J5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -321,6 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D2B2FAC19DD2E2997AB8A3 /* AddCustomPresetSheet.swift in Sources */,
+				E673C01028098A959D8446B3 /* AlarmSoundType.swift in Sources */,
+				71FD43508C10BF03C72D8CD9 /* AudioFilePicker.swift in Sources */,
 				10B28483C791FA76FE7386D2 /* CustomPreset.swift in Sources */,
 				1C2C43D98050FB7993B2EBFC /* EditReminderSheet.swift in Sources */,
 				CFF85DFEC35335067FCB9B66 /* FlashlightManager.swift in Sources */,
@@ -366,7 +376,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZettaiWidget/ZettaiWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV4579A884;
+				DEVELOPMENT_TEAM = PTD45769J5;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ZettaiWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -388,7 +398,7 @@
 				CODE_SIGN_ENTITLEMENTS = App/ZettaiWasurenai.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV4579A884;
+				DEVELOPMENT_TEAM = PTD45769J5;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -469,7 +479,7 @@
 				CODE_SIGN_ENTITLEMENTS = App/ZettaiWasurenai.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV4579A884;
+				DEVELOPMENT_TEAM = PTD45769J5;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -488,7 +498,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZettaiWidget/ZettaiWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NV4579A884;
+				DEVELOPMENT_TEAM = PTD45769J5;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ZettaiWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

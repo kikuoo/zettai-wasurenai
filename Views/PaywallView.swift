@@ -44,8 +44,15 @@ public struct PaywallView: View {
                     }
                     .padding(.horizontal, 20)
                     
-                    // MARK: - 3大特典リスト
+                    // MARK: - 4大プレミアム特典リスト
                     VStack(spacing: 14) {
+                        featureRow(
+                            icon: "music.note.list",
+                            iconColor: .orange,
+                            title: "お気に入りの音楽でアラーム",
+                            subtitle: "好きな楽曲や推しのボイス音声ファイルをアラーム音に自由に設定できます。"
+                        )
+                        
                         featureRow(
                             icon: "infinity",
                             iconColor: .blue,
