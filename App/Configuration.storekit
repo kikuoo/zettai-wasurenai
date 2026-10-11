@@ -1,0 +1,61 @@
+{
+  "identifier" : "E2B7864B",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "ja_JP",
+    "_storefront" : "JPN",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21583921",
+      "localizations" : [
+        {
+          "description" : "プレミアム機能の全解除",
+          "displayName" : "プレミアムプラン",
+          "locale" : "ja"
+        }
+      ],
+      "name" : "プレミアム",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "300",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1001",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "やること無制限・定番追加・場所でお知らせ",
+              "displayName" : "月額プラン (¥300/月)",
+              "locale" : "ja"
+            }
+          ],
+          "productID" : "com.zettaiwasurenai.app.subscription.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Subscription 300",
+          "subscriptionGroupID" : "21583921",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

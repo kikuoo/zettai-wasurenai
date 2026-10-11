@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017B2059293E803A7B2B130C /* RepeatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BE36B01CB5BB7B9FEBC64 /* RepeatOption.swift */; };
+		04D1FA790045F16C7CE16A73 /* SlideToUnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D74644E145CF7167AAADF2B /* SlideToUnlockView.swift */; };
+		0964CBAC4AE59163F6FA6B26 /* ReminderCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D07525361DB76F44E41D0D /* ReminderCategory.swift */; };
+		10B28483C791FA76FE7386D2 /* CustomPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591BAA5737B4C522E68DD24 /* CustomPreset.swift */; };
+		11A1527CDB42D0A8A88D4BCF /* ZettaiWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5189896747C663A28C00BB2A /* ZettaiWidget.swift */; };
+		14DFF07D728A537143F43565 /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F38C9F53B741202EE2401A /* ReminderItem.swift */; };
+		1AAF1B31C268273B81719F9D /* ZettaiWasurenaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B2464344D1C218A31FEF22 /* ZettaiWasurenaiApp.swift */; };
+		1C2C43D98050FB7993B2EBFC /* EditReminderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72239F8259776CC624363F8C /* EditReminderSheet.swift */; };
+		22AFA4F27EB851FC8BDA5CD6 /* LocationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437CFEF803123628D0DFE7B /* LocationTarget.swift */; };
+		230324CF2A996E34B83D278F /* ReminderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7CA2420766FC483BE1FE1 /* ReminderCardView.swift */; };
+		23271180A673792A2ADC37DA /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3713F916091A5CF8BBA10 /* SpeechManager.swift */; };
+		27D2B2FAC19DD2E2997AB8A3 /* AddCustomPresetSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8E6CC99EAA0D1AF0E86222 /* AddCustomPresetSheet.swift */; };
+		3310951515EBDE8586409BD9 /* QuickAddReminderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B348B56BC7D40BA4064FAED4 /* QuickAddReminderSheet.swift */; };
+		3E4073B5F413E96A37027CFA /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2DFBBD0ED1A664E8204924 /* ReminderStore.swift */; };
+		3ECBCB6FD6707FD041E199CC /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A8DBA68BE1557BB83C8EDA /* PaywallView.swift */; };
+		4705E600281898E412EA86BA /* MainReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE1EA4F752369B07667278 /* MainReminderListView.swift */; };
+		52AFEBC27FBA959AF2AA03FA /* ReminderCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D07525361DB76F44E41D0D /* ReminderCategory.swift */; };
+		53B98B33E8CFB2BEBF4C81CF /* TimePresetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A70B26BD8704ED0D3A4955F /* TimePresetButton.swift */; };
+		54EA63DB82A9E5D570A63A83 /* SystemAlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D56F98814C65D952A85312 /* SystemAlarmManager.swift */; };
+		5A6B939983E78E26A69A12A2 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65367C89AC062AF5CAA43BC6 /* SubscriptionManager.swift */; };
+		5C10F6B8FF50A119455ACB89 /* alarm_siren.caf in Resources */ = {isa = PBXBuildFile; fileRef = B8DD456249044B68689E4D9E /* alarm_siren.caf */; };
+		65D5A784182DD6642BE0CE4D /* RepeatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5BE36B01CB5BB7B9FEBC64 /* RepeatOption.swift */; };
+		87AAF842B7D3BBEB98295775 /* ZettaiWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FA22557150E864196FEC5FD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93A7ACF8287BE1001E5C1E /* SettingsView.swift */; };
+		94B2E51E5C5B97372683FDC5 /* VoiceSoundGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D55F406526A3ACC62A494D /* VoiceSoundGenerator.swift */; };
+		95F531432CE644E66539B74E /* ZettaiWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA570650C7379C35694C2E42 /* ZettaiWidgetBundle.swift */; };
+		AF6577E6D11C462C2BC6FDE8 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B0D436CC290EA3135BC26EFF /* Configuration.storekit */; };
+		B76E6FCECAB24C620E91D531 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829E0BD48B7758025038554C /* NotificationManager.swift */; };
+		C2B63D6A7CA93E151C30345D /* ReminderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F38C9F53B741202EE2401A /* ReminderItem.swift */; };
+		CFF85DFEC35335067FCB9B66 /* FlashlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23CAFF59C9B5F03EA026D0C /* FlashlightManager.swift */; };
+		D5D993385D9607C8C92D6EC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0460BE1DD5B035C2D9DC0693 /* Assets.xcassets */; };
+		D8D2C3F906A918DB6C6EBF24 /* SoundEffectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435870503D3E2BD8CD18FC5 /* SoundEffectManager.swift */; };
+		D8FC495045793AED05B42416 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3039D06BF34924808B027D9 /* LocationManager.swift */; };
+		DC54A43ADA425EF602381492 /* LongPressButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B4CF6D8B682EEB4569C926 /* LongPressButtonView.swift */; };
+		DFE2DEAAEC9E7A4FA59BAA08 /* LocationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4026D8D92C5189D24999899 /* LocationPickerView.swift */; };
+		E4FAA02D13B1651059B1197A /* IntenseAlarmOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B5FF7ED5A1EFC8B20D459 /* IntenseAlarmOverlayView.swift */; };
+		E7B8E63B5CB8A220C018FC95 /* LocationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437CFEF803123628D0DFE7B /* LocationTarget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76CDDE7ABADA47A762CFA084 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DA579E14C645C0AB1A0D71F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95B810C73D96CE63ECAF08F2;
+			remoteInfo = ZettaiWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0BF7E0187D8AE23A6A000BED /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87AAF842B7D3BBEB98295775 /* ZettaiWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01F38C9F53B741202EE2401A /* ReminderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderItem.swift; sourceTree = "<group>"; };
+		0460BE1DD5B035C2D9DC0693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12B2464344D1C218A31FEF22 /* ZettaiWasurenaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettaiWasurenaiApp.swift; sourceTree = "<group>"; };
+		1D5BE36B01CB5BB7B9FEBC64 /* RepeatOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatOption.swift; sourceTree = "<group>"; };
+		1D74644E145CF7167AAADF2B /* SlideToUnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideToUnlockView.swift; sourceTree = "<group>"; };
+		1F93A7ACF8287BE1001E5C1E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		23076C9AD1CEBF6E0F2FB0A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2437CFEF803123628D0DFE7B /* LocationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTarget.swift; sourceTree = "<group>"; };
+		2F0CFC23BD169927E123B95D /* ZettaiWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZettaiWidget.entitlements; sourceTree = "<group>"; };
+		33B4CF6D8B682EEB4569C926 /* LongPressButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressButtonView.swift; sourceTree = "<group>"; };
+		5189896747C663A28C00BB2A /* ZettaiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettaiWidget.swift; sourceTree = "<group>"; };
+		5F2E06C7CEFC183510F1D98B /* ZettaiWasurenai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZettaiWasurenai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65367C89AC062AF5CAA43BC6 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		69456B314CD3F4AD7E473C8F /* ZettaiWasurenai.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZettaiWasurenai.entitlements; sourceTree = "<group>"; };
+		6BB9FAEC6663A98771F9FA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		72239F8259776CC624363F8C /* EditReminderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReminderSheet.swift; sourceTree = "<group>"; };
+		72D55F406526A3ACC62A494D /* VoiceSoundGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceSoundGenerator.swift; sourceTree = "<group>"; };
+		78D07525361DB76F44E41D0D /* ReminderCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCategory.swift; sourceTree = "<group>"; };
+		7A70B26BD8704ED0D3A4955F /* TimePresetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePresetButton.swift; sourceTree = "<group>"; };
+		7EC3713F916091A5CF8BBA10 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		829E0BD48B7758025038554C /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		86A8DBA68BE1557BB83C8EDA /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		8A2DFBBD0ED1A664E8204924 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		9591BAA5737B4C522E68DD24 /* CustomPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPreset.swift; sourceTree = "<group>"; };
+		A4026D8D92C5189D24999899 /* LocationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerView.swift; sourceTree = "<group>"; };
+		AE8E6CC99EAA0D1AF0E86222 /* AddCustomPresetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomPresetSheet.swift; sourceTree = "<group>"; };
+		B0D436CC290EA3135BC26EFF /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		B348B56BC7D40BA4064FAED4 /* QuickAddReminderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddReminderSheet.swift; sourceTree = "<group>"; };
+		B3EE1EA4F752369B07667278 /* MainReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReminderListView.swift; sourceTree = "<group>"; };
+		B8DD456249044B68689E4D9E /* alarm_siren.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm_siren.caf; sourceTree = "<group>"; };
+		D23CAFF59C9B5F03EA026D0C /* FlashlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashlightManager.swift; sourceTree = "<group>"; };
+		D3D7CA2420766FC483BE1FE1 /* ReminderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardView.swift; sourceTree = "<group>"; };
+		D5D56F98814C65D952A85312 /* SystemAlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAlarmManager.swift; sourceTree = "<group>"; };
+		DA570650C7379C35694C2E42 /* ZettaiWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZettaiWidgetBundle.swift; sourceTree = "<group>"; };
+		E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ZettaiWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3039D06BF34924808B027D9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F435870503D3E2BD8CD18FC5 /* SoundEffectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEffectManager.swift; sourceTree = "<group>"; };
+		F66B5FF7ED5A1EFC8B20D459 /* IntenseAlarmOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntenseAlarmOverlayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		03951E0A10FB2956933EF4CF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE8E6CC99EAA0D1AF0E86222 /* AddCustomPresetSheet.swift */,
+				A4026D8D92C5189D24999899 /* LocationPickerView.swift */,
+				33B4CF6D8B682EEB4569C926 /* LongPressButtonView.swift */,
+				D3D7CA2420766FC483BE1FE1 /* ReminderCardView.swift */,
+				1D74644E145CF7167AAADF2B /* SlideToUnlockView.swift */,
+				7A70B26BD8704ED0D3A4955F /* TimePresetButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		07EB71FC8986FB6EFB03C949 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D23CAFF59C9B5F03EA026D0C /* FlashlightManager.swift */,
+				F3039D06BF34924808B027D9 /* LocationManager.swift */,
+				829E0BD48B7758025038554C /* NotificationManager.swift */,
+				8A2DFBBD0ED1A664E8204924 /* ReminderStore.swift */,
+				F435870503D3E2BD8CD18FC5 /* SoundEffectManager.swift */,
+				7EC3713F916091A5CF8BBA10 /* SpeechManager.swift */,
+				65367C89AC062AF5CAA43BC6 /* SubscriptionManager.swift */,
+				D5D56F98814C65D952A85312 /* SystemAlarmManager.swift */,
+				72D55F406526A3ACC62A494D /* VoiceSoundGenerator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		266325B2EFD37D2175807A09 = {
+			isa = PBXGroup;
+			children = (
+				51BD81FBB1DCE328A5D01CC4 /* App */,
+				61E38734DCA52FA0D3ECCF4F /* Models */,
+				07EB71FC8986FB6EFB03C949 /* Services */,
+				B7448462D7F9604965DD05AC /* Views */,
+				815BDC80BE3EC099D958000B /* ZettaiWidget */,
+				2A0C9407502AEA385716509A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A0C9407502AEA385716509A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F2E06C7CEFC183510F1D98B /* ZettaiWasurenai.app */,
+				E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51BD81FBB1DCE328A5D01CC4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD456249044B68689E4D9E /* alarm_siren.caf */,
+				0460BE1DD5B035C2D9DC0693 /* Assets.xcassets */,
+				B0D436CC290EA3135BC26EFF /* Configuration.storekit */,
+				6BB9FAEC6663A98771F9FA75 /* Info.plist */,
+				69456B314CD3F4AD7E473C8F /* ZettaiWasurenai.entitlements */,
+				12B2464344D1C218A31FEF22 /* ZettaiWasurenaiApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		61E38734DCA52FA0D3ECCF4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9591BAA5737B4C522E68DD24 /* CustomPreset.swift */,
+				2437CFEF803123628D0DFE7B /* LocationTarget.swift */,
+				78D07525361DB76F44E41D0D /* ReminderCategory.swift */,
+				01F38C9F53B741202EE2401A /* ReminderItem.swift */,
+				1D5BE36B01CB5BB7B9FEBC64 /* RepeatOption.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		815BDC80BE3EC099D958000B /* ZettaiWidget */ = {
+			isa = PBXGroup;
+			children = (
+				23076C9AD1CEBF6E0F2FB0A3 /* Info.plist */,
+				2F0CFC23BD169927E123B95D /* ZettaiWidget.entitlements */,
+				5189896747C663A28C00BB2A /* ZettaiWidget.swift */,
+				DA570650C7379C35694C2E42 /* ZettaiWidgetBundle.swift */,
+			);
+			path = ZettaiWidget;
+			sourceTree = "<group>";
+		};
+		B7448462D7F9604965DD05AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72239F8259776CC624363F8C /* EditReminderSheet.swift */,
+				F66B5FF7ED5A1EFC8B20D459 /* IntenseAlarmOverlayView.swift */,
+				B3EE1EA4F752369B07667278 /* MainReminderListView.swift */,
+				86A8DBA68BE1557BB83C8EDA /* PaywallView.swift */,
+				B348B56BC7D40BA4064FAED4 /* QuickAddReminderSheet.swift */,
+				1F93A7ACF8287BE1001E5C1E /* SettingsView.swift */,
+				03951E0A10FB2956933EF4CF /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		016283365C0FF4F01C6878EC /* ZettaiWasurenai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E7200F3B873A041518A8D0 /* Build configuration list for PBXNativeTarget "ZettaiWasurenai" */;
+			buildPhases = (
+				E77BF4C22015F6DEE534DB7D /* Sources */,
+				F9CDBDC3DF2BECCCCC9AE246 /* Resources */,
+				0BF7E0187D8AE23A6A000BED /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADDF590A3FFEA32901F0B5DD /* PBXTargetDependency */,
+			);
+			name = ZettaiWasurenai;
+			packageProductDependencies = (
+			);
+			productName = ZettaiWasurenai;
+			productReference = 5F2E06C7CEFC183510F1D98B /* ZettaiWasurenai.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95B810C73D96CE63ECAF08F2 /* ZettaiWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E275F994BACDCF971B0FD03A /* Build configuration list for PBXNativeTarget "ZettaiWidget" */;
+			buildPhases = (
+				69B72A730F32340B1C4E391F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZettaiWidget;
+			packageProductDependencies = (
+			);
+			productName = ZettaiWidget;
+			productReference = E6DD212A70D1E87C472EFE84 /* ZettaiWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DA579E14C645C0AB1A0D71F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					016283365C0FF4F01C6878EC = {
+						ProvisioningStyle = Automatic;
+					};
+					95B810C73D96CE63ECAF08F2 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9C6B1AE13955067F38EFF885 /* Build configuration list for PBXProject "ZettaiWasurenai" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 266325B2EFD37D2175807A09;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2A0C9407502AEA385716509A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				016283365C0FF4F01C6878EC /* ZettaiWasurenai */,
+				95B810C73D96CE63ECAF08F2 /* ZettaiWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9CDBDC3DF2BECCCCC9AE246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5D993385D9607C8C92D6EC4 /* Assets.xcassets in Resources */,
+				AF6577E6D11C462C2BC6FDE8 /* Configuration.storekit in Resources */,
+				5C10F6B8FF50A119455ACB89 /* alarm_siren.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69B72A730F32340B1C4E391F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22AFA4F27EB851FC8BDA5CD6 /* LocationTarget.swift in Sources */,
+				0964CBAC4AE59163F6FA6B26 /* ReminderCategory.swift in Sources */,
+				C2B63D6A7CA93E151C30345D /* ReminderItem.swift in Sources */,
+				65D5A784182DD6642BE0CE4D /* RepeatOption.swift in Sources */,
+				11A1527CDB42D0A8A88D4BCF /* ZettaiWidget.swift in Sources */,
+				95F531432CE644E66539B74E /* ZettaiWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E77BF4C22015F6DEE534DB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D2B2FAC19DD2E2997AB8A3 /* AddCustomPresetSheet.swift in Sources */,
+				10B28483C791FA76FE7386D2 /* CustomPreset.swift in Sources */,
+				1C2C43D98050FB7993B2EBFC /* EditReminderSheet.swift in Sources */,
+				CFF85DFEC35335067FCB9B66 /* FlashlightManager.swift in Sources */,
+				E4FAA02D13B1651059B1197A /* IntenseAlarmOverlayView.swift in Sources */,
+				D8FC495045793AED05B42416 /* LocationManager.swift in Sources */,
+				DFE2DEAAEC9E7A4FA59BAA08 /* LocationPickerView.swift in Sources */,
+				E7B8E63B5CB8A220C018FC95 /* LocationTarget.swift in Sources */,
+				DC54A43ADA425EF602381492 /* LongPressButtonView.swift in Sources */,
+				4705E600281898E412EA86BA /* MainReminderListView.swift in Sources */,
+				B76E6FCECAB24C620E91D531 /* NotificationManager.swift in Sources */,
+				3ECBCB6FD6707FD041E199CC /* PaywallView.swift in Sources */,
+				3310951515EBDE8586409BD9 /* QuickAddReminderSheet.swift in Sources */,
+				230324CF2A996E34B83D278F /* ReminderCardView.swift in Sources */,
+				52AFEBC27FBA959AF2AA03FA /* ReminderCategory.swift in Sources */,
+				14DFF07D728A537143F43565 /* ReminderItem.swift in Sources */,
+				3E4073B5F413E96A37027CFA /* ReminderStore.swift in Sources */,
+				017B2059293E803A7B2B130C /* RepeatOption.swift in Sources */,
+				8FA22557150E864196FEC5FD /* SettingsView.swift in Sources */,
+				04D1FA790045F16C7CE16A73 /* SlideToUnlockView.swift in Sources */,
+				D8D2C3F906A918DB6C6EBF24 /* SoundEffectManager.swift in Sources */,
+				23271180A673792A2ADC37DA /* SpeechManager.swift in Sources */,
+				5A6B939983E78E26A69A12A2 /* SubscriptionManager.swift in Sources */,
+				54EA63DB82A9E5D570A63A83 /* SystemAlarmManager.swift in Sources */,
+				53B98B33E8CFB2BEBF4C81CF /* TimePresetButton.swift in Sources */,
+				94B2E51E5C5B97372683FDC5 /* VoiceSoundGenerator.swift in Sources */,
+				1AAF1B31C268273B81719F9D /* ZettaiWasurenaiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADDF590A3FFEA32901F0B5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95B810C73D96CE63ECAF08F2 /* ZettaiWidget */;
+			targetProxy = 76CDDE7ABADA47A762CFA084 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2F2D20FD5FBBFA3D3671355F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZettaiWidget/ZettaiWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV4579A884;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ZettaiWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zettaiwasurenai.app.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		925A66B1323ACF76E26BC331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/ZettaiWasurenai.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV4579A884;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zettaiwasurenai.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96D58C0EC644D0D4E943479B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PTD45769J5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9B4176DCAC7D3D01BE5671A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/ZettaiWasurenai.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV4579A884;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zettaiwasurenai.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC6DA10B0C9C7993E7E91CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ZettaiWidget/ZettaiWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV4579A884;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ZettaiWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zettaiwasurenai.app.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9BCAFFB62A2ACD34AE4BD70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PTD45769J5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C6B1AE13955067F38EFF885 /* Build configuration list for PBXProject "ZettaiWasurenai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9BCAFFB62A2ACD34AE4BD70 /* Debug */,
+				96D58C0EC644D0D4E943479B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E275F994BACDCF971B0FD03A /* Build configuration list for PBXNativeTarget "ZettaiWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6DA10B0C9C7993E7E91CC7 /* Debug */,
+				2F2D20FD5FBBFA3D3671355F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E8E7200F3B873A041518A8D0 /* Build configuration list for PBXNativeTarget "ZettaiWasurenai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925A66B1323ACF76E26BC331 /* Debug */,
+				9B4176DCAC7D3D01BE5671A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DA579E14C645C0AB1A0D71F /* Project object */;
+}
