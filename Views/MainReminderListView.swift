@@ -58,10 +58,10 @@ public struct MainReminderListView: View {
                                         .foregroundColor(.white)
                                     
                                     VStack(alignment: .leading, spacing: 2) {
-                                        Text("通知が許可されていません")
+                                        Text("通知がオフになっています")
                                             .font(.system(size: 15, weight: .bold))
                                             .foregroundColor(.white)
-                                        Text("タップして通知を許可し、絶対忘れないようにしましょう")
+                                        Text("タップして通知の設定を確認する")
                                             .font(.system(size: 12, weight: .medium))
                                             .foregroundColor(.white.opacity(0.9))
                                     }

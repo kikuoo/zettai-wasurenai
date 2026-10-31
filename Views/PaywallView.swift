@@ -182,17 +182,19 @@ public struct PaywallView: View {
                         
                         HStack(spacing: 16) {
                             Link("利用規約 (EULA)", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
-                                .font(.system(size: 11, weight: .medium))
+                                .font(.system(size: 12, weight: .semibold))
                                 .foregroundColor(.blue)
+                                .underline()
                             
                             Text("・")
                                 .foregroundColor(.secondary)
                             
-                            Link("プライバシーポリシー", destination: URL(string: "https://zettaiwasurenai.app/privacy")!)
-                                .font(.system(size: 11, weight: .medium))
+                            Link("プライバシーポリシー", destination: URL(string: "https://kikuoo.github.io/zettai-wasurenai/#privacy")!)
+                                .font(.system(size: 12, weight: .semibold))
                                 .foregroundColor(.blue)
+                                .underline()
                         }
-                        .padding(.top, 4)
+                        .padding(.top, 6)
                     }
                     .padding(.horizontal, 24)
                     .padding(.bottom, 20)

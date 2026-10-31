@@ -51,14 +51,13 @@ public final class NotificationManager: NSObject, ObservableObject, UNUserNotifi
         }
     }
     
-    /// 通知の許可リクエスト（＋システムアラームの許可）
+    /// 通知の許可リクエスト
     public func requestAuthorization(completion: @escaping (Bool) -> Void = { _ in }) {
         let options: UNAuthorizationOptions = [.alert, .sound, .badge, .criticalAlert]
         UNUserNotificationCenter.current().requestAuthorization(options: options) { [weak self] granted, error in
             DispatchQueue.main.async {
                 self?.isAuthorized = granted
                 completion(granted)
-                SystemAlarmManager.shared.requestAuthorization()
             }
         }
     }

@@ -162,9 +162,9 @@ public struct SettingsView: View {
                             .foregroundColor(notifManager.isAuthorized ? .green : .orange)
                         
                         VStack(alignment: .leading, spacing: 2) {
-                            Text(notifManager.isAuthorized ? "通知は許可されています" : "通知がオフになっています")
+                            Text(notifManager.isAuthorized ? "通知はオンになっています" : "通知がオフになっています")
                                 .font(.system(size: 16, weight: .semibold))
-                            Text(notifManager.isAuthorized ? "指定時刻に音と画面でお知らせします" : "確実に気づくため通知を許可してください")
+                            Text(notifManager.isAuthorized ? "指定時刻に音と画面でお知らせします" : "予定時刻に音と画面でお知らせします")
                                 .font(.system(size: 12))
                                 .foregroundColor(.secondary)
                         }
@@ -172,7 +172,7 @@ public struct SettingsView: View {
                         Spacer()
                         
                         if !notifManager.isAuthorized {
-                            Button("許可する") {
+                            Button("次へ") {
                                 notifManager.requestAuthorization()
                             }
                             .buttonStyle(.borderedProminent)
@@ -185,17 +185,17 @@ public struct SettingsView: View {
                 if alarmManager.isSupported {
                     Section(
                         header: Text("システムアラーム（激震モード）").font(.system(size: 14, weight: .bold)),
-                        footer: Text("許可すると、激震モードの予定は時計アプリのアラームと同じ扱いになり、ロック中・他アプリ使用中・マナーモード中でも止めるまで鳴り続けます。").font(.system(size: 12))
+                        footer: Text("激震モードを設定すると、予定は時計アプリのアラームと同じ扱いになり、ロック中・他アプリ使用中・マナーモード中でも止めるまで鳴り続けます。").font(.system(size: 12))
                     ) {
                         HStack {
                             Image(systemName: alarmManager.isAuthorized ? "alarm.fill" : "alarm")
                                 .font(.system(size: 22))
                                 .foregroundColor(alarmManager.isAuthorized ? .green : .orange)
-                            Text(alarmManager.isAuthorized ? "アラームは許可されています" : "アラームが未許可です")
+                            Text(alarmManager.isAuthorized ? "アラームは設定済みです" : "アラームが未設定です")
                                 .font(.system(size: 16, weight: .semibold))
                             Spacer()
                             if !alarmManager.isAuthorized {
-                                Button("許可する") {
+                                Button("次へ") {
                                     alarmManager.requestAuthorization { granted in
                                         if granted {
                                             store.reminders.forEach { NotificationManager.shared.scheduleNotification(for: $0) }
@@ -241,7 +241,7 @@ public struct SettingsView: View {
                         Divider()
                         guideRow(icon: "speaker.slash.fill", color: .gray,
                                  title: "マナーモード中の注意",
-                                 detail: "通常の通知はマナーモードで音が消えます。マナーモード中でも鳴らしたい場合は、上の「システムアラーム」を許可して激震モードを使ってください。")
+                                 detail: "通常の通知はマナーモードで音が消えます。マナーモード中でも鳴らしたい場合は、上の「システムアラーム」を設定して激震モードを使ってください。")
                     }
                     .padding(.vertical, 8)
                 }
@@ -553,6 +553,36 @@ public struct SettingsView: View {
                         Spacer()
                         Text("1.0.0")
                             .foregroundColor(.secondary)
+                    }
+                    
+                    Link(destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!) {
+                        HStack {
+                            Text("利用規約 (EULA)")
+                                .foregroundColor(.primary)
+                            Spacer()
+                            Image(systemName: "arrow.up.right.square")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    
+                    Link(destination: URL(string: "https://kikuoo.github.io/zettai-wasurenai/#privacy")!) {
+                        HStack {
+                            Text("プライバシーポリシー")
+                                .foregroundColor(.primary)
+                            Spacer()
+                            Image(systemName: "arrow.up.right.square")
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    
+                    Link(destination: URL(string: "https://kikuoo.github.io/zettai-wasurenai/")!) {
+                        HStack {
+                            Text("サポート・お問い合わせ")
+                                .foregroundColor(.primary)
+                            Spacer()
+                            Image(systemName: "arrow.up.right.square")
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }
             }
