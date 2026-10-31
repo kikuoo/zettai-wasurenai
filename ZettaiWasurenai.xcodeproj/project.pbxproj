@@ -268,11 +268,11 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					016283365C0FF4F01C6878EC = {
-						DevelopmentTeam = PTD45769J5;
+						DevelopmentTeam = NV4579A884;
 						ProvisioningStyle = Automatic;
 					};
 					95B810C73D96CE63ECAF08F2 = {
-						DevelopmentTeam = PTD45769J5;
+						DevelopmentTeam = NV4579A884;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -376,7 +376,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZettaiWidget/ZettaiWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTD45769J5;
+				DEVELOPMENT_TEAM = NV4579A884;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ZettaiWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -398,7 +398,7 @@
 				CODE_SIGN_ENTITLEMENTS = App/ZettaiWasurenai.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTD45769J5;
+				DEVELOPMENT_TEAM = NV4579A884;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -448,7 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = PTD45769J5;
+				DEVELOPMENT_TEAM = NV4579A884;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -479,7 +479,7 @@
 				CODE_SIGN_ENTITLEMENTS = App/ZettaiWasurenai.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTD45769J5;
+				DEVELOPMENT_TEAM = NV4579A884;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -498,7 +498,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZettaiWidget/ZettaiWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTD45769J5;
+				DEVELOPMENT_TEAM = NV4579A884;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ZettaiWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -549,7 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = PTD45769J5;
+				DEVELOPMENT_TEAM = NV4579A884;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
